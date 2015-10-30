@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/beschreibung" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <EditText
+	        android:id="@+id/txtDescription"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="textMultiLine" />
+        
+        <Button
+            android:id="@+id/btnDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/load_more" />
+        
+        <ImageButton
+	        android:id="@+id/btnSpeechRecognitionDescription"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+        android:contentDescription="@string/description_description"
+	        android:src="@android:drawable/ic_btn_speak_now" />
+    </LinearLayout>
+
+	<TextView
+        android:id="@+id/lblLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ort" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <EditText
+	        android:id="@+id/txtLocation"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="textMultiLine" />
+        
+        <Button
+	        android:id="@+id/btnLocation"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/load_more" />
+        
+        <ImageButton
+	        android:id="@+id/btnSpeechRecognitionLocation"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+        android:contentDescription="@string/description_location"
+	        android:src="@android:drawable/ic_btn_speak_now" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnSpeechRecognition"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="37dp"
+        android:contentDescription="@string/description_allinone"
+        android:src="@android:drawable/ic_btn_speak_now" />
+    
+    <fragment
+		  android:id="@+id/map"
+		  android:name="com.google.android.gms.maps.MapFragment"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  class="com.google.android.gms.maps.SupportMapFragment" />
+</LinearLayout>

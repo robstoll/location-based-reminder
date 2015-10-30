@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LocationBasedReminder</string>
+    <string name="action_add">Add new item</string>
+    <string name="action_save">Save new item</string>
+    <string name="action_cancel_service">Stop Locator</string>
+    <string name="action_start_service">Start Locator</string>
+    <string name="action_location_settings">Location Settings</string>    <string name="action_settings">Settings</string>
+    <string name="msg_locationservice_disabled">Location Services are disabled and thus the Reminder cannot work correctly. Please change the settings and start the locator manually.</string>
+    <string name="btn_yes_goto_locationservice_settings">Take me to the settings</string>
+    <string name="btn_no_thanks">Cancel</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_save">Save</string>
+    <string name="msg_unexpected_error">An unexpected error occurred, we are sorry!</string>
+	<string name="lbl_description">description</string>
+	<string name="lbl_latitude">Latitude</string>
+	<string name="lbl_longitude">Longitude</string>
+	<string name="url_rest_service">http://robertstoll.cwsurf.de/mus/</string>
+	<string name="btn_open_google_maps">Open Google Maps</string>
+	<string name="default_title">Reminder</string>
+	<string name="load_more">&#8230;</string>
+	<string name="beschreibung">Beschreibung</string>
+	<string name="ort">Ort</string>
+	<string name="description_allinone">Start speech recognition for location and description</string>
+	<string name="description_location">Start speech recognition for location</string>
+	<string name="description_description">Start speech recognition for description</string>
+	<string name="radius">Radius</string>
+	<string name="allinone">All in One</string>
+</resources>
